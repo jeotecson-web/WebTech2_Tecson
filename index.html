@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WalterMart.com</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Lato, Geneva, sans-serif;
+        }
+
+        .products_container{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .products_grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            text-align: center;
+            padding-top: 10px;
+            align-content: end;
+        }
+        .product_item{
+            align-content: end;
+        }
+
+        .product_item img{
+            align-content: center;
+        }
+        .ads{
+            display: grid;
+            grid-template-columns: 350px 705px auto;
+            padding-left: 50px; /*CHANGE IF NECESSARYYY*/
+            padding-top: 50px;
+            padding-right: 0;
+
+        }
+
+        nav{
+            -webkit-box-shadow: -1px 9px 11px -4px rgba(0,0,0,0.67); 
+            box-shadow: -1px 9px 11px -4px rgba(0,0,0,0.67);
+        }
+
+        .navigation{
+            display: grid;
+            grid-template-columns: 500px 790px 80px 0px;
+            margin-left: 2px;
+        }
+
+        .nav-element{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .nav-element2{
+            padding-left: 0px;
+            padding-right: 5px;
+            padding-top: 20px;
+        }
+
+        .cart{
+            background-color: #dd214e;
+            padding-left: 47px;
+            padding-right: 47px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .product_item{
+            border: 2px solid #A4A4A4;
+        }
+
+        button {
+	        background-color:#44c767;
+	        border:1px solid #18ab29;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#ffffff;
+	        font-family:Arial;
+	        font-size:17px;
+	        padding:7px 22px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #2f6627;
+        }
+
+        button:hover {
+	        background-color:#5cbf2a;
+        }
+
+        button:active {
+	        position:relative;
+	        top:1px;
+        }
+
+        footer{
+            background-color: lightgray;
+            text-align: center;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navigation">
+            <img src="burger_icon.png" alt="burgericon" height="30px" width="30px" class="nav-element" style="padding-left: 50px;">
+            <img src="WMLogo.png" alt="logo" height="70px" width="300px" class="nav-element1">
+            <img src="search_icon.png" alt="search" height="30px" width="30px" class="nav-element2">
+            <img src="cart.png" alt="cart"  height="50px" width="50px" class="cart">
+        </nav>
+    </div>
+<main>
+    <div class="ads">
+        <img src="Ad 1.png" alt="adone" style="height: 600px;">
+        <img src="Ad 2.png" alt="adtwo" style="height: 600px;">
+        <img src="Ad 3.png" alt="adthree" style="height: 600px;">
+    </div>
+</main>
+<section>
+    <div class="products_container">
+        <h2 class="products_heading" style="font-size: 28px;">What's <span style="color: #dd214e; font-size: 28px; font-style: italic;"> New  </span> <a href="Google.com" style="color: #dd214e; font-size: 17px; padding-left: 10px; text-decoration: none;">View All</a></h2>
+        <div class="products_grid">
+            <div class="product_item">
+                <img src="Reese_s.png" alt="" class="productpic1">
+                <p class="title1">Reese's Chocolate Peanut Butter Hearts King Size | 2.4oz</p>
+                <a href="Google.com" class="price1" style="color: #dd214e; font-weight: bold; text-decoration: none;">See Price</a>
+                <div><button class="add-button">+ Add</button></div>
+            </div>
+            <div class="product_item">
+                <img src="kisses.png" alt="" class="productpic2">
+                <p class="title1">Hershey's Kisses Creamy and Choco Almond Assorted | 180g</p>
+                <a href="Google.com" class="price1" style="color: #dd214e; font-weight: bold; text-decoration: none;">See Price</a>
+                <div><button class="add-button">+ Add</button></div>
+            </div>
+            <div class="product_item">
+                <img src="kisses_2.png" alt="" class="productpic3">
+                <p class="title1">Hershey's Kisses Creamy and Choco Almond Assorted | 81g</p>
+                <a href="Google.com" class="price1" style="color: #dd214e; font-weight: bold; text-decoration: none;">See Price</a>
+                <div><button class="add-button">+ Add</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <footer>© 2024 WalterMart Delivery</footer>
+</body>
+</html>
